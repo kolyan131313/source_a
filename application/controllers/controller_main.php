@@ -17,7 +17,9 @@ class Controller_Main extends Controller
     {
         $this->domain = Gonfiguration::get('url');
         $curl   = new cURL(true, true);
-        $result = $curl->post($this->domain . $this->url, ['name' => uniqid()]);
+        $date   = new DateTime();
+        $result = $curl->post($this->domain . $this->url, ['name' => uniqid(),
+                                                           'date' => $date->format('Y-m-d H:i:s') ]);
 
         $this->view->generate('main_view', [
             'id' => $this->getRowId($result)
