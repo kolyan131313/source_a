@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Visitor';
+    src: url('../font/8128/8128-webfont.eot');
+    src: url('../font/8128/8128-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/8128/8128-webfont.woff2') format('woff2'),
+    url('../font/8128/8128-webfont.woff') format('woff'),
+    url('../font/8128/8128-webfont.ttf') format('truetype'),
+    url('../font/8128/8128-webfont.svg#visitor_tt1_brkregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
